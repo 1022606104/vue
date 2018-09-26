@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>添加，删除</title>
+    <link href="https://cdn.bootcss.com/bootstrap/4.1.1/css/bootstrap.css" rel="stylesheet">
+    <style>
+        *{margin: 0;padding: 0;box-sizing: border-box;}
+        header{text-align: center;padding-top: 100px;}
+        .container{width: 240px;margin: 0 auto;}
+        li{list-style: none;}
+        li,#e{float: left;margin-top: 15px;}
+        #e{float: right;}
+        ul{border-bottom: 1px solid #000;margin: 15px 0px 15px 0px;}
+    </style>
+</head>
+<body>
+
+<header>    
+       <div class="container">
+        <h1>待办事项</h1>
+        
+        <div id="app">
+            <input type="text" placeholder="需要添加的事项！" v-model="num" v-on:keyup.enter="add"><button @click="add">添加</button> 
+        
+        <ul v-for="(a,index) in al" class="clearfix">
+           <li>{{a.text}}</li><button   @click="de(index)" id="e">{{a.delepe}}</button>
+        </ul>
+       
+               
+        </div>
+    </div>
+</header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.bootcss.com/vue/2.5.16/vue.js"></script>
+<script src="js/script.js"></script> 
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>座位表</title>
+    <link rel="stylesheet" href="bootstrap-3.3.4-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="top">
+            <i class="fa fa-users"></i>
+            <p>座位表</p>
+        </div>
+        <!--            top-->
+        <div class="nav">
+            <p class="p1">
+                <i class='fa fa-angle-down hidden'></i>
+                <i class='fa fa-angle-up '></i>使用说明</p>
+            <p class="p2">点击学员信息可以来回切换选中效果;</p>
+        </div>
+        <!--            nav-->
+    </div>
+</header>
+<!--    分割线-->
+<div class="sigma-content">
+    <div class="container">
+        <div class="sigma-middle-line">
+            <span class="sigma-line-text">座位</span>
+        </div>
+    </div>
+</div>
+<!--    分割线-->
+<div id="app">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3" v-for="(li,index1) in lists">
+                <p>{{index1 + 1}}组</p>
+                <div class="row" id="ipu" v-for="(lit,index2) in li" :class="{active:lists[index1][index2].bool}" @click="ju(index1,index2)">
+                    <div class="col-md-3">
+                        <img :src="lit.head" alt="">
+                    </div>
+                    <div class="col-md-4" >
+                        <div class="ipu">
+                            <i class="fa fa-television"></i>{{lit.seat}}
+                        </div>
+                        <p class="io">{{lit.post}}</p>
+                    </div>
+                    <div class="col-md-5">
+                        {{lit.name}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--    分割线-->
+<div class="sigma-content">
+    <div class="container">
+        <div class="sigma-middle-line">
+            <span class="sigma-line-text">讲台</span>
+        </div>
+    </div>
+</div>
+<!--    分割线-->
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="https://cdn.bootcss.com/vue/2.5.16/vue.min.js"></script>
+<script src="https://cdn.bootcss.com/vue-resource/1.5.1/vue-resource.js"></script>
+<script src="js/script.js"></script>    
+</body>
+</html>
