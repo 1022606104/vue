@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>上传</title>
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header>
+<div class="container">
+    <h3>腾讯新闻后台修改</h3>
+</div>
+</header>
+<div class="banner" id="app">
+    <div class="container">
+        <div class="btn1">
+            <button type="button" class="btn btn-danger" @click="add"> 添加 </button>
+        </div>
+        <!--   添加-->
+       <div id="no">
+           <div id="nono">
+               <div class="iu"> <h5>添加文章</h5> <div class="a"> <i class="fa fa-mail-forward" style="float: right" @click="agg"></i></div></div>
+               <form>
+               <div class="form-group">
+                   <h5>标题</h5>
+                   <input type="email" class="form-control" id="exampleInputEmail1"  placeholder="标题" v-model="kb3" @keyup.enter="fun">
+               </div>
+               <div class="form-group">
+                   <h5>标签</h5>
+                   <select class="form-control"  v-model="kb1" @keyup.enter="fun">
+                       <option>今日话题</option>
+                       <option>电影</option>
+                       <option>时尚</option>
+                   </select>
+               </div>
+               <div class="form-group">
+                  <h5>作者</h5>
+                   <input type="email" class="form-control" id="exampleInputEmail3" placeholder="作者" v-model="kb2" @keyup.enter="fun">
+               </div>
+               <div class="form-group">
+                   <h5>内容</h5>
+                   <textarea class="form-control" rows="1" placeholder="内容" ></textarea>
+               </div>
+               </form>
+               <button type="button" class="btn btn-info" id="mo" @click="fun"> 确认 </button>
+           </div>
+       </div>
+         <!--       第一个添加的弹窗       -->
+
+        <div id="nio">
+            <div id="niono">
+                <div class="iu"> <h5>添加文章</h5> <div class="a"> <i class="fa fa-mail-forward" style="float: right" @click="ag"></i></div></div>
+                <form>
+                    <div class="form-group">
+                        <h5>标题</h5>
+                        <input type="email" class="form-control" id="exampleInputEmail2"  placeholder="标题" v-model="kb3i" @keyup.enter="gai">
+                    </div>
+                    <div class="form-group">
+                        <h5>标签</h5>
+                        <select class="form-control"  v-model="kb1i" @keyup.enter="gai">
+                            <option>今日话题</option>
+                            <option>电影</option>
+                            <option>时尚</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <h5>作者</h5>
+                        <input type="email" class="form-control" id="exampleInputEmail4" placeholder="作者" v-model="kb2i" @keyup.enter="gai">
+                    </div>
+                    <!--<div class="form-group">-->
+                        <!--<h5>内容</h5>-->
+                        <!--<textarea class="form-control" rows="1" placeholder="内容"></textarea>-->
+                    <!--</div>-->
+                </form>
+                <button type="button" class="btn btn-info" id="mio" @click="gai"> 修改 </button>
+            </div>
+        </div>
+        <!--        第二个添加的弹窗       -->
+
+
+        <div class="bio">
+            <table>
+                <tr>
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                        </label></td>
+                    <td>文章ID</td>
+                    <td>标签</td>
+                    <td>标题</td>
+                    <td>作者</td>
+                    <td>上传时间</td>
+                    <td>发布状态</td>
+                    <td>操作</td>
+                </tr>
+            </table>
+        </div>
+
+        <!--  第一个分类-->
+        <div class="big">
+            <table v-for="(a,index) in ai">
+                <tr>
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="inlineCheckbox2" value="option1">
+                        </label></td>
+                    <td>{{index+1}}</td>
+                    <td>{{a.fz}}</td>
+                    <td>{{a.fx}}</td>
+                    <td>{{a.fc}}</td>
+                    <td>{{a.fv}}</td>
+                    <td>{{a.fe}}</td>
+                    <td><button @click="fabu(index)">{{a.fr}}</button><button @click="ad(index)">修改</button><button @click="confirm1(index)">{{a.delepe}}</button></td>
+                </tr>
+            </table>
+        </div>
+
+        <!--  第二个分类  -->
+        <div class="big">
+            <table v-for="(a,index) in aq">
+                <tr>
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="inlineCheckbox3" value="option1">
+                        </label></td>
+                    <td>{{index+1}}</td>
+                    <td>{{a.fz}}</td>
+                    <td>{{a.fx}}</td>
+                    <td>{{a.fc}}</td>
+                    <td>{{a.fv}}</td>
+                    <td>{{a.fe}}</td>
+                    <td><button @click="fabu1(index)">{{a.fr}}</button><button @click="ad1(index)">修改</button><button @click="confirm2(index)">{{a.delepe}}</button></td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- 第三个分类-->
+        <div class="big">
+            <table v-for="(a,index) in ao">
+                <tr>
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="inlineCheckbox4" value="option1">
+                        </label></td>
+                    <td>{{index+1}}</td>
+                    <td>{{a.fz}}</td>
+                    <td>{{a.fx}}</td>
+                    <td>{{a.fc}}</td>
+                    <td>{{a.fv}}</td>
+                    <td>{{a.fe}}</td>
+                    <td><button @click="fabu2(index)">{{a.fr}}</button><button @click="ad2(index)">修改</button><button @click="confirm3(index)">{{a.delepe}}</button></td>
+                </tr>
+            </table>
+        </div>
+
+
+    </div>
+</div>
+
+
+
+<script src="https://cdn.bootcss.com/vue/2.5.16/vue.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,276 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+li:hover{
+    color: red;
+    text-decoration: underline;
+}
+header::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.container{
+    width: 1000px;
+}
+header{
+    padding: 14px 0 9px 0;
+}
+header .logo img{
+    width: 108px;
+    height: 31px;
+}
+.logo,.search ,.room{
+    float: left;
+}
+header .search {
+    margin:0 0 0 160px;
+    border: 1px solid #ccc;
+    width: 290px;
+}
+header .search img{
+    width: 22px;
+    padding-top: 5px;
+}
+header .sea ,input ,img{
+    float: left;
+}
+header .sea{
+   padding-left: 10px;
+    padding-top: 5px;
+    padding-right: 5px;
+}
+header .search input{
+    border: 0;
+    height: 33px;
+    width: 210px;
+    outline: medium;
+}
+header button{
+    width: 90px;
+    height: 35px;
+    color: #fff;
+    background: #5da4e6;
+    border: 0;
+}
+header .room{
+    float: right;
+    padding-top: 10px;
+    font-size: 15px;
+}
+header .room img{
+    width: 22px;
+}
+header .room i{
+    width: 45px;
+    font-size:20px;
+    padding-left: 10px;
+    color: #5da4e6;
+}
+/*header*/
+.nav::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.nav{
+    padding-top: 10px;
+}
+.nav .container{
+    background: #3b86e0;
+}
+.nav ul{
+    width: 140px;
+}
+.nav li{
+    float: left;
+    list-style: none;
+    padding-left: 10px;
+    font-size: 16px;
+}
+.nav .xin,.xin1,.xin2{
+    float: left;
+    margin-top:15px
+}
+.nav .xin{
+    margin-left: 20px;
+    border-right: 1px solid #609fdb;
+}
+.nav .xin1{
+    border-right: 1px solid #609fdb;
+}
+.nav .xin2{
+    width: 100px;
+}
+.nav a{
+    color: #fff;
+}
+/*gi*/
+.gi {
+    height:90px;
+    margin-bottom: 10px;
+}
+.gi  .container{
+    margin-top: 10px;
+    padding-left: 0;
+    padding-right: 0;
+}
+.gi .g1 img {
+    padding-right: 18px;
+}
+/*banner*/
+.banner::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.banner .container{
+    padding-left: 0;
+    padding-right: 0;
+}
+.row{
+    margin-left: 0;
+    margin-right: 0;
+}
+.banner .col-md-4 {
+    padding-left: 0;
+    padding-right: 0;
+}
+.banner .wen{
+    border-top: 1px solid #609fdb;
+    height: 30px;
+}
+.banner .wen h6,p{
+    float: left;
+    padding-right: 18px;
+    padding-top: 5px;
+}
+.banner{
+    font-size: 13px;
+}
+.banner li{
+    list-style: none;
+    padding-top: 9px;
+}
+.banner .col-md-4{
+    padding-right: 5px;
+}
+.banner .ipu{
+    height: 78px;
+}
+.banner .ipo img{
+    padding-right: 19px;
+}
+.banner .ipl P{
+    padding-right: 35px;
+}
+.banner .yao{
+    width: 278px;
+    height: 237px;
+    border: 1px solid #5da4e1;
+}
+#yue{
+    padding-left: 50px;
+}
+#yuee{
+    padding-left: 50px;
+}
+.banner .yao{
+    padding: 10px;
+}
+.banner .yao p{
+    margin-bottom: 10px;
+    font-size: 1px;
+}
+.banner .yao a{
+    padding-left: 6px;
+    color: #294c7f;
+}
+.banner .bio a{
+    padding-right: 9px;
+}
+.banner .bip a{
+    padding-right: 9px;
+}
+.banner .gao img{
+    width: 280px;
+    height: 330px;
+    padding-top: 20px;
+}
+.banner .he{
+    margin-top: 340px;
+    width: 280px;
+    height: 180px;
+    border: 1px solid #d2e1f1;
+}
+.banner .he  a{
+    padding-right: 5px;
+}
+.banner .ei{
+    margin-left: 130px;
+}
+.banner .hi{
+    margin-top: 15px;
+    width: 280px;
+    height: 180px;
+}
+.banner .he input{
+    width: 100px;
+}
+.banner .he input,.banner button{
+    margin-top: 5px;
+    margin-right: 5px;
+}
+.banner .he li{
+    float: left;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.banner .he .if img{
+    margin-left: 8px;
+}
+.banner .if{
+    height: 100px;
+}
+.banner .ip{
+    padding-top: 15px;
+}
+.banner .ip span{
+    color: red ;
+    font-size: 14px;
+}
+.banner .he .if p{
+    margin-left: 10px;
+}
+/*main*/
+.main .container{
+    padding-left: 0;
+    padding-right: 0;
+}
+.main .col-md-8{
+    padding-left: 0;
+    padding-right: 0;
+}
+.main .col-md-4{
+    padding-left: 0;
+    padding-right: 0;
+}
+.main .bif{
+    border-top: 1px solid #000;
+}
+.main h6{
+    padding-top: 10px;
+}
+.main .ipu img{
+    margin-right: 10px;
+    width: 108px;
+    height: 70px;
+}
+.main .ipu{
+    height: 78px;
+}

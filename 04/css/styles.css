@@ -1,0 +1,176 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+header {
+    text-align: center;
+}
+.banner ::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.container{
+    width: 1200px;
+}
+.ini ,.inp,.int,.ino{
+    float: left;
+    margin-top: 50px;
+    margin-right: 30px;
+}
+.form-control{
+    width: 180px;
+}
+h5,.input{
+    float: left;
+    padding-right: 6px;
+}
+input{
+    height: 37px;
+    border-radius: 6px;
+}
+/*header*/
+.banner .btn1{
+    width: 70px;
+    margin-top: 60px;
+    margin-bottom: 10px;
+    margin-left: 16px;
+}
+.checkbox-inline{
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 6px;
+}
+.bio input,.big input{
+    width: 20px;
+    height: 16px;
+}
+.bio tr,.big tr{
+    border-top: 1px solid #888;
+}
+.bio td{
+    text-align: center;
+    width: 150px;
+    background: #f5f5f5;
+    border: 1px solid #888;
+}
+.big td{
+    width: 137px;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #888;
+}
+.big{
+    margin-left: 16px;
+}
+.bio{
+    margin-left: 16px;
+}
+/*btn-top*/
+li{
+    list-style: none;
+}
+#no{
+    display: none;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    position: absolute;
+    position: fixed;
+    top:0px;
+    left: 0px;
+    /*opacity: 0.9;*/
+}
+.banner #nono{
+    border: 1px solid #000;
+    position: absolute;
+    position: fixed;
+    width:600px;
+    height: 350px;
+    z-index: 60;
+    left: 500px;
+    top: 90px;
+    background: #fff;
+    
+}
+#nono .iu{
+    height: 30px;
+    padding: 3px;
+    color: #fff;
+    background: #000;
+}
+#nono a{
+    color: #fff;
+}
+#nono p ,i{
+    float: left;
+}
+#nono i{
+    cursor: pointer;
+}
+#mo{
+    float: right;
+}
+p{
+    margin-bottom: 0rem;
+}
+.form-group{
+    padding-left: 30px;
+}
+.form-group input{
+    margin-top: 10px;
+    width: 90%;
+}
+.form-group select{
+    width: 90%;
+}
+.form-group textarea{
+    width: 90%;
+}
+#nio{
+    display: none;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    position: absolute;
+    position: fixed;
+    top:0px;
+    left: 0px;
+    /*opacity: 0.9;*/
+}
+.banner #niono{
+    border: 1px solid #000;
+    position: absolute;
+    position: fixed;
+    width:600px;
+    height: 350px;
+    z-index: 60;
+    left: 500px;
+    top: 90px;
+    background: #fff;
+
+}
+#niono .iu{
+    height: 30px;
+    padding: 3px;
+    color: #fff;
+    background: #000;
+}
+#niono a{
+    color: #fff;
+}
+#niono p ,i{
+    float: left;
+}
+#niono i{
+    cursor: pointer;
+}
+#mio{
+    float: right;
+}
